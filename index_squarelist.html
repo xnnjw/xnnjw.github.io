@@ -30,13 +30,26 @@
         .content * {
             text-align: left;
         }
-        /* 为出版物列表添加间距 */
+        /* 为出版物列表添加样式 */
         .publication-list {
-            list-style: square inside;
-            padding-left: 0;
+            list-style: square outside;
+            padding-left: 20px;
         }
         .publication-list li {
             margin-bottom: 20px;
+        }
+        .publication-list li div {
+            display: block; /* 确保 div 作为块级元素 */
+        }
+        .publication-list li div p:first-child {
+            display: inline; /* 标题与方块在同一行 */
+            margin: 0;
+            padding-left: 5px; /* 标题与方块的微小缩进 */
+        }
+        .publication-list li div p:last-child {
+            display: block; /* 作者信息另起一行 */
+            margin: 0;
+            padding-left: 5px; /* 与标题缩进一致 */
         }
     </style>
 
@@ -78,7 +91,7 @@
 
 <div class="content">
 <div style="display: flex; align-items: flex-start; gap: 20px; margin-bottom: 20px;">
-    <img src="/bio.JPG" alt="photo" style="width: 220px; border-radius: 12px;" />
+    <img src="bio.JPG" alt="photo" style="width: 180px; border-radius: 12px;" />
     <div style="flex: 1;">
        <p>Hello! I am a third year Ph.D. candidate in Electrical Engineering at <a href="https://www.aalto.fi/en">Aalto University</a>, advised by and <a href="https://users.aalto.fi/~vorobys1/">Prof. Sergiy A. Vorobyov</a> and <a href="http://users.spa.aalto.fi/esollila/">Prof. Esa Ollila</a>.
         </p>
@@ -94,8 +107,8 @@
 <h3 style="text-align: left; font-weight: bold;">Research Interests</h4>
 <div>
   <p><strong>Robust signal processing and statistical inference</strong>, with applications to high-dimensional and structured data.</p>
-  <p><strong>Tensor methods and structured regression models</strong>, particolarly Kruskal tensor regression under constraints.</p>
   <p><strong>Graph signal processing</strong>, including GNN sensitivity analysis under model uncertainty.</p>
+  <p><strong>Tensor methods and structured regression models</strong>, particularly Kruskal tensor regression under constraints.</p>
 </div>
 
 <!-- ================== 发表论文 ================== -->
@@ -180,8 +193,8 @@
 <hr>
 <h4 style="text-align: left; font-weight: bold;">Invited and Contributed Talks</h4>
 <div>
-  <p><i>Graph Convolutional Neural Networks Sensitivity under Probabilistic Error Model</i></p>
-  <p><a href="https://sites.google.com/view/5thslsipworkshop">Statistical Learning for Signal and Image Processing (SLSIP) Workshop</a>, May 13–17, 2024, Porquerolles, France</p>
+  <p>Graph Convolutional Neural Networks Sensitivity under Probabilistic Error Model</p>
+  <p><i><a href="https://sites.google.com/view/5thslsipworkshop">Statistical Learning for Signal and Image Processing (SLSIP) Workshop</a></i>, May 13–17, 2024, Porquerolles, France</p>
 </div>
 
 <!-- ================== 教育背景 ================== -->
@@ -199,4 +212,3 @@
 <footer></footer>
 </body>
 </html>
-```

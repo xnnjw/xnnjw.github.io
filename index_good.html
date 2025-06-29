@@ -15,35 +15,20 @@
             --accent: #2D87C8;
             --border-width: 0;
         }
-        .navbar-defaolt {
+        .navbar-default {
             background-color: transparent;
             border: none;
             box-shadow: none;
         }
-        .navbar-defaolt .navbar-nav > li > a {
+        .navbar-default .navbar-nav > li > a {
             color: black;
-        }
-        /* 修复 Firefox 文字居中问题 */
-        .content {
-            text-align: left;
-        }
-        .content * {
-            text-align: left;
-        }
-        /* 为出版物列表添加间距 */
-        .publication-list {
-            list-style: square inside;
-            padding-left: 0;
-        }
-        .publication-list li {
-            margin-bottom: 20px;
         }
     </style>
 
     <!-- 外部资源 -->
     <link rel="stylesheet" href="https://xnnjw.github.io/css/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/defaolt.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
@@ -56,7 +41,7 @@
 
 <body>
     <!-- ======= 顶部导航栏（已清空按钮） ======= -->
-    <nav class="navbar navbar-defaolt navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand visible-xs" href="#"></a>
@@ -76,7 +61,7 @@
     <h5>xinjue.wang [at] aalto.fi</h5>
 </div>
 
-<div class="content">
+<div align="start" class="content">
 <div style="display: flex; align-items: flex-start; gap: 20px; margin-bottom: 20px;">
     <img src="/bio.JPG" alt="photo" style="width: 220px; border-radius: 12px;" />
     <div style="flex: 1;">
@@ -85,88 +70,65 @@
 
         <p> I obtained my Master degree in Acoustics from Aalto University in 2022. Prior to that, I did my Bachelor degree in Information Engineering in Northwestern Polytechnical University in 2020.   </p>
 
+
       <p>My research lies at the intersection of signal processing, optimization, and machine learning, with a focus on robust inference and structured models. </p>
     </div>
 </div>
 
 <!-- ================== 研究方向 ================== -->
 <hr>
-<h3 style="text-align: left; font-weight: bold;">Research Interests</h4>
+<h4 style="text-align: left; font-weight: bold;">Research Interests</h4>
 <div>
   <p><strong>Robust signal processing and statistical inference</strong>, with applications to high-dimensional and structured data.</p>
-  <p><strong>Tensor methods and structured regression models</strong>, particolarly Kruskal tensor regression under constraints.</p>
+  <p><strong>Tensor methods and structured regression models</strong>, particularly Kruskal tensor regression under constraints.</p>
   <p><strong>Graph signal processing</strong>, including GNN sensitivity analysis under model uncertainty.</p>
 </div>
 
 <!-- ================== 发表论文 ================== -->
 <hr>
-<h3 style="text-align: left; font-weight: bold;">Publications</h4>
+<h4 style="text-align: left; font-weight: bold;">Publications</h4>
 
-<h4 style="text-align: left; font-weight: bold;">Preprints & Under Review</h5>
-<ol class="publication-list">
-  <li>
-    <div>
-      <p><a href="#">Generalized Nonnegative Structured Kruskal Tensor Regression</a></p>
-      <p><strong>X. Wang</strong>, E. Ollila, S.A. Vorobyov and A. Mian. <i>Submitted to Signal Processing</i>, Mar. 2025.</p>
-    </div>
-  </li>
-  <li>
-    <div>
-      <p>Robust Activity Detection For Massive Random Access (<a href="https://arxiv.org/abs/2505.15555">arXiv</a>)</p>
-      <p><strong>X. Wang</strong>, E. Ollila, and S.A. Vorobyov. <i>Submitted to IEEE Transactions on Signal Processing</i>, Dec. 2024.</p>
-    </div>
-  </li>
-</ol>
+<h5 style="text-align: left; font-weight: bold;">Preprints & Under Review</h5>
+<div>
+  <p><a href="#">Generalized Nonnegative Structured Kruskal Tensor Regression</a></p>
+  <p><strong>X. Wang</strong>, E. Ollila, S.A. Vorobyov and A. Mian. <i>Submitted to Signal Processing</i>, Mar. 2025.</p>
+</div>
+<div>
+  <p>Robust Activity Detection For Massive Random Access (<a href="https://arxiv.org/abs/2505.15555">arXiv</a>)</p>
+  <p><strong>X. Wang</strong>, E. Ollila, and S.A. Vorobyov. <i>Submitted to IEEE Transactions on Signal Processing</i>, Dec. 2024.</p>
+</div>
 
-<h4 style="text-align: left; font-weight: bold;">Journal Papers</h5>
-<ol class="publication-list">
-  <li>
-    <div>
-      <p><a href="https://doi.org/10.1109/JSEN.2024.3447271">Tracking The Occluded Indoor Target With Scattered Millimeter Wave Signal</a></p>
-      <p>Y. Xu, <strong>X. Wang</strong>, J. Kupiainen, J. Sae, J. Boutellier, J. Nurmi and B. Tan. <i>IEEE Sensors Journal</i>, vol. 24, no. 22, pp. 38102–38112, 2024.</p>
-    </div>
-  </li>
-  <li>
-    <div>
-      <p><a href="https://doi.org/10.1109/TSIPN.2024.3485532">Graph Convolutional Neural Networks Sensitivity Under Probabilistic Error Model</a> (<a href="https://arxiv.org/abs/2203.07831">arXiv</a>)</p>
-      <p><strong>X. Wang</strong>, E. Ollila, and S.A. Vorobyov. <i>IEEE Transactions on Signal and Information Processing over Networks</i>, vol. 10, pp. 788–803, 2024.</p>
-    </div>
-  </li>
-</ol>
+<h5 style="text-align: left; font-weight: bold;">Journal Papers</h5>
+<div>
+  <p><a href="https://doi.org/10.1109/JSEN.2024.3447271">Tracking The Occluded Indoor Target With Scattered Millimeter Wave Signal</a></p>
+  <p>Y. Xu, <strong>X. Wang</strong>, J. Kupiainen, J. Sae, J. Boutellier, J. Nurmi and B. Tan. <i>IEEE Sensors Journal</i>, vol. 24, no. 22, pp. 38102–38112, 2024.</p>
+</div>
+<div>
+  <p><a href="https://doi.org/10.1109/TSIPN.2024.3485532">Graph Convolutional Neural Networks Sensitivity Under Probabilistic Error Model</a> (<a href="https://arxiv.org/abs/2203.07831">arXiv</a>)</p>
+  <p><strong>X. Wang</strong>, E. Ollila, and S.A. Vorobyov. <i>IEEE Transactions on Signal and Information Processing over Networks</i>, vol. 10, pp. 788–803, 2024.</p>
+</div>
 
-<h4 style="text-align: left; font-weight: bold;">Conference Papers</h5>
-<ol class="publication-list">
-  <li>
-    <div>
-      <p><a href="https://doi.org/10.1109/ICASSP49660.2025.10889433">Robust Activity Detection For Massive Access Using Covariance-Based Matching Pursuit</a></p>
-      <p><strong>X. Wang</strong>, E. Ollila, and S.A. Vorobyov. <i>ICASSP</i>, pp. 1–5, 2025.</p>
-    </div>
-  </li>
-  <li>
-    <div>
-      <p><a href="https://doi.org/10.1109/CAMSAP58249.2023.10403474">Nonnegative Sparse Kruskal Tensor Regression</a></p>
-      <p><strong>X. Wang</strong>, E. Ollila, and S.A. Vorobyov. <i>CAMSAP (invited paper)</i>, pp. 441–445, 2023.</p>
-    </div>
-  </li>
-  <li>
-    <div>
-      <p><a href="https://doi.org/10.23919/EUSIPCO58844.2023.10289784">Correlation-Based Graph Smoothness Measures In Graph Signal Processing</a></p>
-      <p>J. Miettinen, S.A. Vorobyov, E. Ollila and <strong>X. Wang</strong>. <i>EUSIPCO</i>, pp. 1848–1852, 2023.</p>
-    </div>
-  </li>
-  <li>
-    <div>
-      <p><a href="https://doi.org/10.23919/EUSIPCO55093.2022.9909740">Graph Neural Network Sensitivity Under Probabilistic Error Model</a></p>
-      <p><strong>X. Wang</strong>, E. Ollila, and S.A. Vorobyov. <i>EUSIPCO</i>, pp. 2146–2150, 2022.</p>
-    </div>
-  </li>
-  <li>
-    <div>
-      <p><a href="https://doi.org/10.1109/ICSPCC50002.2020.9259484">Distributed Principal Component Analysis Based On Randomized Low-Rank Approximation</a></p>
-      <p><strong>X. Wang</strong> and J. Chen. <i>ICSPCC</i>, pp. 1–5, 2020.</p>
-    </div>
-  </li>
-</ol>
+<h5 style="text-align: left; font-weight: bold;">Conference Papers</h5>
+<div>
+  <p><a href="https://doi.org/10.1109/ICASSP49660.2025.10889433">Robust Activity Detection For Massive Access Using Covariance-Based Matching Pursuit</a></p>
+  <p><strong>X. Wang</strong>, E. Ollila, and S.A. Vorobyov. <i>ICASSP</i>, pp. 1–5, 2025.</p>
+</div>
+<div>
+  <p><a href="https://doi.org/10.1109/CAMSAP58249.2023.10403474">Nonnegative Sparse Kruskal Tensor Regression</a></p>
+  <p><strong>X. Wang</strong>, E. Ollila, and S.A. Vorobyov. <i>CAMSAP (invited paper)</i>, pp. 441–445, 2023.</p>
+</div>
+<div>
+  <p><a href="https://doi.org/10.23919/EUSIPCO58844.2023.10289784">Correlation-Based Graph Smoothness Measures In Graph Signal Processing</a></p>
+  <p>J. Miettinen, S.A. Vorobyov, E. Ollila and <strong>X. Wang</strong>. <i>EUSIPCO</i>, pp. 1848–1852, 2023.</p>
+</div>
+<div>
+  <p><a href="https://doi.org/10.23919/EUSIPCO55093.2022.9909740">Graph Neural Network Sensitivity Under Probabilistic Error Model</a></p>
+  <p><strong>X. Wang</strong>, E. Ollila, and S.A. Vorobyov. <i>EUSIPCO</i>, pp. 2146–2150, 2022.</p>
+</div>
+<div>
+  <p><a href="https://doi.org/10.1109/ICSPCC50002.2020.9259484">Distributed Principal Component Analysis Based On Randomized Low-Rank Approximation</a></p>
+  <p><strong>X. Wang</strong> and J. Chen. <i>ICSPCC</i>, pp. 1–5, 2020.</p>
+</div>
 
 <!-- ================== 学术服务 ================== -->
 <hr>
@@ -186,7 +148,7 @@
 
 <!-- ================== 教育背景 ================== -->
 <hr>
-<h3 style="text-align: left; font-weight: bold;">Education</h4>
+<h4 style="text-align: left; font-weight: bold;">Education</h4>
 <ul>
   <li>Ph.D., <em>Electrical Engineering</em>, Aalto University, Espoo, Finland, 2022 - Now.</li>
   <li>M.Sc., <em>Electrical Engineering</em>, Aalto University, Espoo, Finland, 2020 - 2022.</li>
@@ -199,4 +161,3 @@
 <footer></footer>
 </body>
 </html>
-```
