@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Xinjue Wang (王新觉)</title>
+
+<!-- External resources (kept: in active use) -->
+<link rel="stylesheet" href="https://xnnjw.github.io/css/main.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+  :root {
+    --accent: #2D87C8;
+  }
+
+  html, body {
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+  }
+
+  /* Firefox text-align fix (kept from original) */
+  .content, .content * { text-align: left; }
+
+  /* Header */
+  .header { margin-bottom: 30px; }
+  .header h2 { margin-bottom: 8px; }
+  .contact { color: #666; margin-bottom: 8px; }
+  .contact .fa-envelope { font-size: 16px; }
+
+  .header-links a {
+    text-decoration: none;
+    color: #555;
+    margin-right: 20px;
+  }
+  .header-links .fa-graduation-cap { color: #4285f4; font-size: 18px; }
+  .header-links .fa-github          { color: #333;    font-size: 18px; }
+
+  /* Section headings */
+  .content h3,
+  .content h4 { font-weight: bold; }
+
+  /* Publication list */
+  .publication-list { padding-left: 20px; }
+  .publication-list li { margin-bottom: 8px; }
+  .publication-list li p { margin: 0; padding-left: 5px; }
+  .publication-list li p:first-child { display: inline; }
+
+  /* Research interests list */
+  .interests-list { padding-left: 20px; }
+  .interests-list li { margin-bottom: 8px; }
+</style>
+</head>
+
+<body>
+<main>
+
+<div class="header">
+  <h2>Xinjue Wang</h2>
+  <p class="contact">
+    <i class="fa fa-envelope"></i> xjw [at] ieee.org &nbsp;|&nbsp; xinjue.wang [at] alumni.aalto.fi
+  </p>
+  <div class="header-links">
+    <a href="https://scholar.google.com/citations?user=IoNd9xMAAAAJ&hl=en" target="_blank" rel="noopener">
+      <i class="fa fa-graduation-cap"></i> Google Scholar
+    </a>
+    <a href="https://github.com/xnnjw" target="_blank" rel="noopener">
+      <i class="fa fa-github"></i> GitHub
+    </a>
+  </div>
+</div>
+
+<div class="content">
+
+<p>Hello!</p>
+
+<p>I obtained my Ph.D. in Electrical Engineering in 2026 at <a href="https://www.aalto.fi/en">Aalto University</a>, advised by Professors <a href="http://users.spa.aalto.fi/esollila/">Esa Ollila</a> and <a href="https://users.aalto.fi/~vorobys1/">Sergiy A. Vorobyov</a>. I received my M.Sc. in Acoustics from Aalto University in 2022, and my B.Eng. in Information Engineering from Northwestern Polytechnical University, Xi'an, China, in 2020.</p>
+
+<!-- ================== Research Interests ================== -->
+<hr>
+<h3>Research Interests</h3>
+<ul class="interests-list">
+  <li><strong>Robust signal processing and high-dimensional detection</strong> — inference under heavy-tailed noise, applied to activity detection in massive random access.</li>
+  <li><strong>Efficient fine-tuning of large language models</strong> — low-rank and CP tensor adapters; zeroth-order Riemannian optimization on fixed-rank manifolds.</li>
+  <li><strong>Structured signal models and inverse problems</strong> — graph signal processing, GNN sensitivity, and tensor decompositions for hyperspectral imaging.</li>
+</ul>
+
+<!-- ================== Publications ================== -->
+<hr>
+<h3>Publications</h3>
+
+<h4>Preprints &amp; Under Review</h4>
+<ol class="publication-list" reversed>
+  <li>
+    <p>Zeroth-Order Riemannian Optimization on Fixed-Rank Manifolds for LLM Fine-Tuning</p>
+    <p><strong>X. Wang</strong>, X. Wang, Y. Zhang, S.A. Vorobyov, and E. Ollila. <i>Submitted</i>, May 2026.</p>
+  </li>
+  <li>
+    <p>A Majorization-Minimization Framework for Activity Detection in Mixed Near-and-Far-Field Random Access</p>
+    <p><strong>X. Wang</strong>, Z.-Y. Wang, S.A. Vorobyov, E. Ollila, G.A.A. Baduge, and M. Vaezi. <i>Submitted</i>, Apr. 2026.</p>
+  </li>
+  <li>
+    <p>Finer Parameter Steps for Low-Rank PEFT: A Controlled Study with CP Tensor Adapters</p>
+    <p><strong>X. Wang</strong>, X. Wang, Y. Zhang, S.A. Vorobyov, E. Ollila, and Z.-Y. Wang. <i>Submitted</i>, May 2026.</p>
+  </li>
+  <li>
+    <p>Covariance-Aware MM-PGD for Mixed Near/Far-Field Activity Detection</p>
+    <p><strong>X. Wang</strong>, Z.-Y. Wang, S.A. Vorobyov, E. Ollila, G.A.A. Baduge, and M. Vaezi. <i>Submitted</i>, 2026.</p>
+  </li>
+</ol>
+
+<h4>Journal Papers</h4>
+<ol class="publication-list" reversed>
+  <li>
+    <p><a href="https://www.sciencedirect.com/science/article/pii/S0165168425004542">Generalized Nonnegative Structured Kruskal Tensor Regression</a> (<a href="https://arxiv.org/abs/2509.19900">arXiv</a>) (<a href="https://github.com/xnnjw/General-NSKTR">code</a>)</p>
+    <p><strong>X. Wang</strong>, E. Ollila, S.A. Vorobyov and A. Mian. <i>Signal Processing</i>, vol. 240, 110338, Mar. 2026.</p>
+  </li>
+  <li>
+    <p><a href="https://doi.org/10.1109/TSP.2025.3597931">Robust Activity Detection For Massive Random Access</a> (<a href="https://arxiv.org/abs/2505.15555">arXiv</a>) (<a href="https://github.com/xnnjw/RobustAD_release">code</a>)</p>
+    <p><strong>X. Wang</strong>, E. Ollila, and S.A. Vorobyov. <i>IEEE Transactions on Signal Processing</i>, vol. 73, pp. 3513–3527, Aug. 2025.</p>
+  </li>
+  <li>
+    <p><a href="https://doi.org/10.1109/JSEN.2024.3447271">Tracking The Occluded Indoor Target With Scattered Millimeter Wave Signal</a></p>
+    <p>Y. Xu, <strong>X. Wang</strong>, J. Kupiainen, J. Sae, J. Boutellier, J. Nurmi and B. Tan. <i>IEEE Sensors Journal</i>, vol. 24, no. 22, pp. 38102–38112, Nov. 2024.</p>
+  </li>
+  <li>
+    <p><a href="https://doi.org/10.1109/TSIPN.2024.3485532">Graph Convolutional Neural Networks Sensitivity Under Probabilistic Error Model</a> (<a href="https://arxiv.org/abs/2203.07831">arXiv</a>)</p>
+    <p><strong>X. Wang</strong>, E. Ollila, and S.A. Vorobyov. <i>IEEE Transactions on Signal and Information Processing over Networks</i>, vol. 10, pp. 788–803, Oct. 2024.</p>
+  </li>
+</ol>
+
+<h4>Conference Papers</h4>
+<ol class="publication-list" reversed>
+  <li>
+    <p><a href="https://ieeexplore.ieee.org/document/11463786">Anisotropic Tensor Deconvolution Of Hyperspectral Images</a> (<a href="http://arxiv.org/abs/2601.11694">arXiv</a>) (<a href="https://github.com/xnnjw/TensorDeconv_release">code</a>)</p>
+    <p><strong>X. Wang</strong>, X. Wang, E. Ollila, and S.A. Vorobyov. <i>ICASSP 2026</i>, Barcelona, Spain, May 2026, pp. 706–710.</p>
+  </li>
+  <li>
+    <p><a href="https://doi.org/10.1109/ICASSP49660.2025.10889433">Robust Activity Detection For Massive Access Using Covariance-Based Matching Pursuit</a></p>
+    <p><strong>X. Wang</strong>, E. Ollila, and S.A. Vorobyov. <i>ICASSP 2025</i>, Hyderabad, India, Apr. 2025, pp. 1–5.</p>
+  </li>
+  <li>
+    <p><a href="https://doi.org/10.1109/CAMSAP58249.2023.10403474">Nonnegative Sparse Kruskal Tensor Regression</a></p>
+    <p><strong>X. Wang</strong>, E. Ollila, and S.A. Vorobyov. <i>CAMSAP 2023 (invited paper)</i>, Herradura, Costa Rica, Dec. 2023, pp. 441–445.</p>
+  </li>
+  <li>
+    <p><a href="https://doi.org/10.23919/EUSIPCO58844.2023.10289784">Correlation-Based Graph Smoothness Measures In Graph Signal Processing</a></p>
+    <p>J. Miettinen, S.A. Vorobyov, E. Ollila and <strong>X. Wang</strong>. <i>EUSIPCO 2023</i>, Helsinki, Finland, Sept. 2023, pp. 1848–1852.</p>
+  </li>
+  <li>
+    <p><a href="https://doi.org/10.23919/EUSIPCO55093.2022.9909740">Graph Neural Network Sensitivity Under Probabilistic Error Model</a></p>
+    <p><strong>X. Wang</strong>, E. Ollila, and S.A. Vorobyov. <i>EUSIPCO 2022</i>, Belgrade, Serbia, Aug. 2022, pp. 2146–2150.</p>
+  </li>
+  <li>
+    <p><a href="https://doi.org/10.1109/ICSPCC50002.2020.9259484">Distributed Principal Component Analysis Based On Randomized Low-Rank Approximation</a></p>
+    <p><strong>X. Wang</strong> and J. Chen. <i>ICSPCC 2020</i>, Macau, China, Aug. 2020, pp. 1–5.</p>
+  </li>
+</ol>
+
+<!-- ================== Academic Service ================== -->
+<hr>
+<h3>Academic Service</h3>
+<p><strong>Journal referee</strong>: <i>IEEE Trans. Inf. Theory</i>, <i>IEEE Trans. Wireless Commun.</i>, <i>IEEE Trans. Mach. Learn. Commun. Netw.</i>, <i>Scand. J. Stat.</i></p>
+<p><strong>Conference reviewer</strong>: <i>ICASSP 2025, 2026</i>, <i>IJCNN 2025</i>, <i>ITW 2024</i></p>
+
+<!-- ================== Education ================== -->
+<hr>
+<h3>Education</h3>
+<ul>
+  <li>Ph.D., <em>Electrical Engineering</em>, Aalto University, Espoo, Finland, 2022 – 2026.</li>
+  <li>M.Sc., <em>Electrical Engineering</em>, Aalto University, Espoo, Finland, 2020 – 2022.</li>
+  <li>B.Eng., <em>Information Engineering</em>, Northwestern Polytechnical University, Xi'an, China, 2016 – 2020.</li>
+</ul>
+
+</div>
+</main>
+</body>
+</html>
